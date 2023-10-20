@@ -1,0 +1,52 @@
+.featuredChart{
+    flex: 2;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px 0px rgb(218, 218, 218);
+    .widgets{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0rem;
+        gap: 0px;
+        .widget:last-child{
+            border-bottom: none;
+         }
+    }
+    .widget{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        padding: 5px;
+        box-shadow: none;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px solid #DFE0EB;
+        height: 100px;
+        cursor: pointer;
+        &:hover{
+           border-bottom: 1px solid #DFE0EB;
+           .top , .buttom {
+            color: #3751FF;
+            }
+        }
+        .top{
+            color: #9FA2B4;
+            font-size: 16px;
+            letter-spacing: 0.4px;
+        }
+        .buttom{
+            font-size: 24px;
+            color: #252733;
+            letter-spacing: 1px;
+            font-weight: 700;
+            padding-bottom: 1rem;
+          
+        }
+    }
+        
+    
+}

@@ -1,0 +1,47 @@
+.navbar{
+    height: 50px;
+    font-size: 14px;
+    color: black;
+    display: flex;
+
+    .wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .navTitle{
+            color: #252733;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+        .navIconbar{
+            padding-top: 0.5rem;
+            .Iconbar{
+                display: flex;
+                flex-direction: row;
+                .icon{
+                    color: #C5C7CD;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+                .navName{
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #252733;
+                    padding-left: 3rem;
+                }
+            }
+            ul{
+                list-style: none;
+            li{
+             padding-left: 1rem;
+             display: flex;
+             align-items: center;
+            }
+            }
+        }
+    }
+   
+   
+}
