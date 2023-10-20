@@ -15,11 +15,11 @@ const SideBar = () => {
       <div className="sidebar">
         <div className="top">
             <img src={logo} alt="logo" className="logo-main"/>
-            <Link to='/' style={{textDecoration: 'none'}}><span className="logo">Dashboard Kit</span></Link>
+            <Link to='/' style={{textDecoration: 'none'}} className="nav-link"><span className="logo">Dashboard Kit</span></Link>
         </div>
         <div className="center">
             <ul>
-            <Link to='/' style={{textDecoration: 'none'}}>
+            <Link to='/' style={{textDecoration: 'none'}} className="nav-link">
                 <li>
                     <PieChartIcon className="icon"/>
                     <span>Overview</span>

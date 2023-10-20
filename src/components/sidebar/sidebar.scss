@@ -28,8 +28,6 @@
         list-style: none;
         padding: 0;
         margin: 0;
-       
-      
         li{
             padding: 12px 15px;
             display: flex;
@@ -40,9 +38,16 @@
             font-weight: 400;
             font-weight: 400;
             font-family: 'Mulish', sans-serif;
-
             &:hover{
-                border-left: 0.5px solid rgb(226, 226, 226) ;
+                border-left: 0.1rem solid rgb(226, 226, 226) ;
+                background-color:#9FA2B4;
+                color: #DDE2FF;
+                .icon{
+                    color: #DDE2FF;
+                }
+            }
+            .nav-link:active{
+                border-left: 0.1rem solid rgb(226, 226, 226) ;
                 background-color:#9FA2B4;
                 color: #DDE2FF;
                 .icon{
@@ -58,7 +63,7 @@
             font-weight: 600;
             margin-left: 10px;
            }
-        }
+       
     }
     .hr{
         margin-bottom: 1rem;
@@ -67,4 +72,5 @@
         opacity: 0.2;
        }
    }
+}
 }
