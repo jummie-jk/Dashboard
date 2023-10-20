@@ -1,0 +1,9 @@
+.tickets{
+    display: flex;
+    width: 100%;
+    .ticketContainer{
+        background-color: #F7F8FC;
+        padding: 1rem 2rem;
+        flex: 6;
+    }
+}

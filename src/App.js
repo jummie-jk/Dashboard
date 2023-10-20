@@ -3,7 +3,7 @@ import Home from "./Pages/home/home";
 import Login from "./Pages/login/Login";
 import Single from "./Pages/single/Single";
 import New from "./Pages/new/New";
-import List from "./Pages/list/list";
+import Tickets from "./Pages/ticket/tickets";
 
 function App() {
   return (
@@ -14,12 +14,12 @@ function App() {
             <Route index element = {<Home/>}/>
             <Route path="login" element = {<Login/>}/>
             <Route path="users">
-              <Route index element= {<List/>}/>
+              <Route index element= {<Tickets/>}/>
               <Route path=":userId" element= {<Single/>}/>
               <Route path="new" element= {<New/>}/>
             </Route>
             <Route path="products">
-              <Route index element= {<List/>}/>
+              <Route index element= {<Tickets/>}/>
               <Route path=":productId" element= {<Single/>}/>
               <Route path="new" element= {<New/>}/>
             </Route>

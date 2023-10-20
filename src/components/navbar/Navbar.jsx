@@ -3,11 +3,11 @@ import "./Navbar.scss";
 import header from './_header.png'
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
-const NavBar = () => {
+const NavBar = ({title}) => {
     return (
       <div className="navbar">
         <div className="wrapper">
-            <div className="navTitle">Overview</div>
+            <div className="navTitle">{title}</div>
             <div className="navIconbar">
                 <ul className="Iconbar">
                     <li><SearchIcon className="icon"/></li>

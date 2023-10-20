@@ -8,7 +8,6 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
 } from "recharts";
 
@@ -92,9 +91,6 @@ const Chart = () => {
                 <stop offset="95%" stopColor="#3751FF" stopOpacity={0.1} />
               </linearGradient>
             </defs>
-            //blue #8884d8
-            //green #82ca9d
-            //blue main #3751FF 
             <XAxis dataKey="name" />
             <YAxis />
             <CartesianGrid strokeDasharray="3 3" />
