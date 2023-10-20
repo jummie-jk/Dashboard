@@ -9,23 +9,29 @@ import Person2Icon from '@mui/icons-material/Person2';
 import ArticleIcon from '@mui/icons-material/Article';
 import SettingsIcon from '@mui/icons-material/Settings';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import { Link } from "react-router-dom";
 const SideBar = () => {
     return (
       <div className="sidebar">
         <div className="top">
             <img src={logo} alt="logo" className="logo-main"/>
-            <span className="logo">Dashboard Kit</span>
+            <Link to='/' style={{textDecoration: 'none'}}><span className="logo">Dashboard Kit</span></Link>
         </div>
         <div className="center">
             <ul>
+            <Link to='/' style={{textDecoration: 'none'}}>
                 <li>
                     <PieChartIcon className="icon"/>
                     <span>Overview</span>
                 </li>
-                <li>
-                    <ConfirmationNumberIcon className="icon"/>
-                    <span>Ticket</span>
-                </li>
+            </Link>
+                <Link to='/tickets' style={{textDecoration: 'none'}}>
+                    <li>
+                        <ConfirmationNumberIcon className="icon"/>
+                        <span>Ticket</span>
+                    </li>
+                </Link>
+              
                 <li>
                     <EmojiObjectsIcon className="icon"/>  
                     <span>Ideas</span>

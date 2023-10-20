@@ -13,7 +13,7 @@ function App() {
           <Route path="/">
             <Route index element = {<Home/>}/>
             <Route path="login" element = {<Login/>}/>
-            <Route path="users">
+            <Route path="tickets">
               <Route index element= {<Tickets/>}/>
               <Route path=":userId" element= {<Single/>}/>
               <Route path="new" element= {<New/>}/>

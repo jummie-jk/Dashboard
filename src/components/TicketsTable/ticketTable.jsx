@@ -22,11 +22,10 @@ const TicketTable = () => {
                 columns={userColumns}
                 initialState={{
                 pagination: {
-                    paginationModel: { page: 0, pageSize: 5 },
+                    paginationModel: { page: 0, pageSize: 8 },
                 },
                 }}
-                pageSizeOptions={[5, 10]}
-                checkboxSelection
+                pageSizeOptions={[8, 10]}
             />
     {/* </div> */}
       </div>

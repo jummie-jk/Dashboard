@@ -1,86 +1,152 @@
 import header from "../navbar/_header.png";
+import menu from "../navbar/menu.png";
 export const userColumns = [
-    { field: 'id', headerName: 'ID', width: 150 },
-    {field: 'user', headerName: 'ticket Details', width: 300, renderCell:(params) => {
+    {field: 'user', headerName: 'Ticket Details', width: 450, renderCell:(params) => {
         return(
             <div className="cellWithImg">
                 <img src={params.row.img} alt='avatar' className="cellImg" />
                 <div>
-                    <p>{params.row.ticketName}</p>
-                    <p> {params.row.ticketDetails}</p>
+                    <p className="ticket-name">{params.row.ticketName}</p>
+                    <p className="ticket-details"> {params.row.ticketDetails}</p>
                 </div>
             </div>
         )
     }},
-    { field: 'name', headerName: 'Name', width: 150 },
-    { field: 'date', headerName: 'Date', width: 150 },
-    { field: 'priority', headerName: 'Priority', width: 150 },
+    { field: 'name', headerName: "Customer's name", width: 200, renderCell:(params) => {
+        return(
+            <div className="nameBlock">
+                <div>
+                    <p className="ticket-name">{params.row.name}</p>
+                    <p className="ticket-details"> {params.row.nameSub}</p>
+                </div>
+            </div>
+        )
+    } },
+    { field: 'date', headerName: 'Date', width: 150,
+    renderCell:(params) => {
+        return(
+            <div className="dateBlock">
+                <div>
+                  
+                    <p className="ticket-name">{params.row.date}</p>
+                    <p className="ticket-details">{params.row.time}</p>
+                </div>
+            </div>
+        )
+    } },
+    { field: 'priority', headerName: 'Priority', width: 150, 
+    renderCell:(params) => {
+        return(
+            <div className={`cellWithStatus ${params.row.priority}`}>
+              {params.row.priority}
+            </div>
+        )
+    }
+},
+    { field: 'avatar', headerName: '', width: 50,  renderCell:(params) => {
+        return(
+            <div className="menu">
+                 <img src={params.row.menu} alt='avatar' className="cellImg" />
+            </div>
+        )
+    } },
 ];
 
 export const userRows = [
   {
     id: 1,
     ticketName: "Contact Email not Linked",
-    ticketDetails: "on 24.05.2019",
+    ticketDetails: "Updated 1 day ago",
     img: header,
     name: "Tom Cruise",
+    nameSub: 'on 24.05.2019',
     date: "May 26, 2019",
+    time: '6:30 PM',
     priority: "high",
+    menu: menu
   },
   {
-    id: 1,
-    ticketName: "Contact Email not Linked",
-    ticketDetails: "on 24.05.2019",
+    id: 2,
+    ticketName: "Adding Images to Featured Posts",
+    ticketDetails: "Updated 1 day ago",
+    img: header,
+    name: "Matt Damon",
+    nameSub: 'on 24.05.2019',
+    date: "May 26, 2019",
+    time: '6:30 PM',
+    priority: "low",
+    menu: menu
+  },
+  {
+    id: 3,
+    ticketName: "When will I be charged this month?",
+    ticketDetails: "Updated 1 day ago",
     img: header,
     name: "Tom Cruise",
+    nameSub: 'on 24.05.2019',
     date: "May 26, 2019",
+    time: '6:30 PM',
     priority: "high",
+    menu: menu
   },
   {
-    id: 1,
-    ticketName: "Contact Email not Linked",
-    ticketDetails: "on 24.05.2019",
+    id: 4,
+    ticketName: "Contact Payment not going through",
+    ticketDetails: "Updated 1 day ago",
     img: header,
     name: "Tom Cruise",
+    nameSub: 'on 24.05.2019',
     date: "May 26, 2019",
-    priority: "high",
+    time: '6:30 PM',
+    priority: "normal",
+    menu: menu
   },
   {
-    id: 1,
-    ticketName: "Contact Email not Linked",
-    ticketDetails: "on 24.05.2019",
+    id: 5,
+    ticketName: "Unable to add replies",
+    ticketDetails: "Updated 2 days ago",
     img: header,
     name: "Tom Cruise",
+    nameSub: 'on 24.05.2019',
     date: "May 26, 2019",
+    time: '6:30 PM',
     priority: "high",
+    menu: menu
   },
   {
-    id: 1,
-    ticketName: "Contact Email not Linked",
-    ticketDetails: "on 24.05.2019",
+    id: 6,
+    ticketName: "Downtime since last week",
+    ticketDetails: "Updated 3 days ago",
     img: header,
     name: "Tom Cruise",
-    date: "May 26, 2019",
-    priority: "high",
+    nameSub: 'on 24.05.2019',
+    date: "6:30 PM",
+    time: 'May 26, 2019',
+    priority: "normal",
+    menu: menu
   },
   {
-    id: 1,
-    ticketName: "Contact Email not Linked",
-    ticketDetails: "on 24.05.2019",
+    id: 7,
+    ticketName: "Referral Bonus",
+    ticketDetails: "Updated 4 days ago",
     img: header,
     name: "Tom Cruise",
-    date: "May 26, 2019",
-    priority: "high",
+    nameSub: 'on 24.05.2019',
+    date: "6:30 PM",
+    time: 'May 26, 2019',
+    priority: "low",
+    menu: menu
   },
   {
-    id: 1,
-    ticketName: "Contact Email not Linked",
-    ticketDetails: "on 24.05.2019",
+    id: 8,
+    ticketName: "How do I change my password?",
+    ticketDetails: "Updated 6 days ago",
     img: header,
     name: "Tom Cruise",
-    date: "May 26, 2019",
-    priority: "high",
+    nameSub: 'on 24.05.2019',
+    date: "6:30 PM",
+    time: 'May 26, 2019',
+    priority: "normal",
+    menu: menu
   },
-  {
-    id: 1,
-    ticketName: "Co
+];
