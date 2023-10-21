@@ -1,5 +1,6 @@
 import header from "../navbar/_header.png";
 import menu from "../navbar/menu.png";
+//Columns
 export const userColumns = [
     {field: 'user', headerName: 'Ticket Details', width: 450, renderCell:(params) => {
         return(
@@ -52,6 +53,7 @@ export const userColumns = [
     } },
 ];
 
+//Rows
 export const userRows = [
   {
     id: 1,
@@ -82,7 +84,7 @@ export const userRows = [
     ticketName: "When will I be charged this month?",
     ticketDetails: "Updated 1 day ago",
     img: header,
-    name: "Tom Cruise",
+    name: "Robert Downey",
     nameSub: 'on 24.05.2019',
     date: "May 26, 2019",
     time: '6:30 PM',
@@ -94,7 +96,7 @@ export const userRows = [
     ticketName: "Contact Payment not going through",
     ticketDetails: "Updated 1 day ago",
     img: header,
-    name: "Tom Cruise",
+    name: "Christian Bale",
     nameSub: 'on 24.05.2019',
     date: "May 26, 2019",
     time: '6:30 PM',
@@ -106,7 +108,7 @@ export const userRows = [
     ticketName: "Unable to add replies",
     ticketDetails: "Updated 2 days ago",
     img: header,
-    name: "Tom Cruise",
+    name: "Henry Cavil",
     nameSub: 'on 24.05.2019',
     date: "May 26, 2019",
     time: '6:30 PM',
@@ -118,7 +120,7 @@ export const userRows = [
     ticketName: "Downtime since last week",
     ticketDetails: "Updated 3 days ago",
     img: header,
-    name: "Tom Cruise",
+    name: "Chris Evans",
     nameSub: 'on 24.05.2019',
     date: "6:30 PM",
     time: 'May 26, 2019',
@@ -130,7 +132,7 @@ export const userRows = [
     ticketName: "Referral Bonus",
     ticketDetails: "Updated 4 days ago",
     img: header,
-    name: "Tom Cruise",
+    name: "Sam Smith",
     nameSub: 'on 24.05.2019',
     date: "6:30 PM",
     time: 'May 26, 2019',
@@ -142,10 +144,46 @@ export const userRows = [
     ticketName: "How do I change my password?",
     ticketDetails: "Updated 6 days ago",
     img: header,
-    name: "Tom Cruise",
+    name: "Steve Rogers",
     nameSub: 'on 24.05.2019',
     date: "6:30 PM",
     time: 'May 26, 2019',
+    priority: "normal",
+    menu: menu
+  },
+  {
+    id: 9,
+    ticketName: "How do I change my password?",
+    ticketDetails: "Updated 6 days ago",
+    img: header,
+    name: "Steve Rogers",
+    nameSub: 'on 24.05.2019',
+    date: "May 26, 2019",
+    time: '6:30 PM',
+    priority: "normal",
+    menu: menu
+  },
+  {
+    id: 10,
+    ticketName: "How do I change my password?",
+    ticketDetails: "Updated 6 days ago",
+    img: header,
+    name: "Steve Rogers",
+    nameSub: 'on 24.05.2019',
+    date: "May 26, 2019",
+    time: '6:30 PM',
+    priority: "normal",
+    menu: menu
+  },
+  {
+    id: 11,
+    ticketName: "How do I change my password?",
+    ticketDetails: "Updated 6 days ago",
+    img: header,
+    name: "Steve Rogers",
+    nameSub: 'on 24.05.2019',
+    date: "May 26, 2019",
+    time: '6:30 PM',
     priority: "normal",
     menu: menu
   },
