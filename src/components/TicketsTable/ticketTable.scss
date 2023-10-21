@@ -8,7 +8,9 @@
     .cellWithImg{
         display: flex;
         .cellImg{
-            margin-right: 2rem;
+            padding: 0rem 1rem;
+            border-radius: 50%;
+
         }
     }
     .ticket-name{

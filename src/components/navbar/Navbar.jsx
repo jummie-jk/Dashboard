@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
-import header from './_header.png'
+import header from '../../images/_header.png'
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 const NavBar = ({title}) => {

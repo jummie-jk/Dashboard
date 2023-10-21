@@ -1,5 +1,5 @@
 import React from "react";
-import inactive from '../navbar/inactive.png'
+import inactive from '../../images/inactive.png'
 import './tasks.scss'
 const Tasks = () => {
     return (

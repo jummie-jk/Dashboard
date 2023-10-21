@@ -1,7 +1,7 @@
 import React from "react";
 import "./sidebar.scss"
 import { Link } from "react-router-dom";
-import logo from '../navbar/logo.png'
+import logo from '../../images/logo.png'
 import PieChartIcon from '@mui/icons-material/PieChart';
 import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
 import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
